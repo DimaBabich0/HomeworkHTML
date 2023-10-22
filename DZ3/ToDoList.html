@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <style>
+        *
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: whitesmoke;
+        }
+        ul
+        {
+            list-style-type: none;
+            padding: 0px;
+        }
+        li
+        {
+            padding: 10px;
+        }
+        .even 
+        {
+            background-color: rgb(75, 200, 255);
+        }
+        .odd 
+        {
+            background-color: rgb(130, 200, 255);
+        }
+        .checked 
+        {
+            background-color: rgb(218, 218, 218);
+            text-decoration: line-through;
+        }
+        li::after 
+        {
+            content: "\00D7";
+            position: absolute;
+            right: 20px;
+            text-decoration: none;
+        }
+        .unchecked::before 
+        {
+            content: url(icons/unchecked.png);
+            margin-right: 10px;
+        }
+        .checked::before 
+        {
+            content: url(icons/checked.png);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My To Do List</h1>
+    <ul class="task-list">
+        <li class="even unchecked">Hit the gym</li>
+        <li class="odd checked">Pay bills</li>
+        <li class="even unchecked">Meet John</li>
+        <li class="odd unchecked">Buy eggs</li>
+        <li class="even checked">Read a book</li>
+        <li class="odd unchecked">Organize office</li>
+        <li class="even unchecked">Eat dinner</li>
+    </ul>
+</body>
+</html>
