@@ -1,0 +1,37 @@
+h1
+{
+    text-align: center;
+    color: green;
+}
+h3
+{
+    color: red;
+}
+
+div hr
+{
+    color: red;
+}
+
+div
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2
+{
+    color: red;
+}
+ul
+{
+    list-style: square;
+}
+ul ul
+{
+    list-style: disc;
+}
+span
+{
+    color: green;
+}

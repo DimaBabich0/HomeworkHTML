@@ -1,0 +1,26 @@
+h1
+{
+    text-align: center;
+}
+
+div
+{
+    text-align: center;
+}
+
+ol>li
+{
+    font-weight: bold;
+}
+ol ul:nth-child(2)
+{
+    list-style-type: square;
+}
+ol ul:nth-child(4)
+{
+    list-style-type: disc;
+}
+ol ul:nth-child(6)
+{
+    list-style-type: circle;
+}
