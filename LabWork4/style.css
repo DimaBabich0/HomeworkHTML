@@ -1,0 +1,29 @@
+body
+{
+    background-attachment: fixed;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat; 
+    background-image: url(background.jpg); 
+    background-color: #ffffff; 
+    font-family: Arial, sans-serif;
+    font-size: 18pt;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+div
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(76, 104, 107, 0.75);
+}
+p
+{    
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    color: white;
+}
