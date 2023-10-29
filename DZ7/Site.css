@@ -1,0 +1,91 @@
+body
+{
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header
+{
+    background-color: #923158;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.menu
+{
+    background-color: #6E1237;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.mainBlock
+{
+    display: flex;
+    margin-top: 10px;
+    color: white;
+}
+
+.column
+{
+    width: 25%;
+}
+
+.aside
+{
+    background-color: #DB92AF;
+    height: 150px;
+    padding: 5% 5% 0% 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.aside:first-child
+{
+    margin-top: 0%;
+}
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+
+.mainContent
+{
+    background-color: #B65B80;
+    width: 50%;
+    padding: 2%;
+}
+.section
+{
+    background-color: #DB92AF;
+    width: 95%;
+    height: 30%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.footer
+{
+    background-color: #6E1237;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+p
+{
+    margin: 0%;
+}
