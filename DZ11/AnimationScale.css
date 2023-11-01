@@ -1,0 +1,55 @@
+body
+{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+img
+{
+    width: 150px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+img:first-child
+{
+    margin-left: 100px;
+}
+img:nth-child(odd)
+{
+    animation: scale 2s infinite;
+    animation-timing-function: linear;
+}
+img:nth-child(even)
+{
+    animation: scale 2s reverse infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scale 
+{
+    0% 
+    {
+        transform: scale(1);
+    }
+
+    25% 
+    {
+        transform: scale(1.5);
+    }
+
+    50% 
+    {
+        transform: scale(1);
+    }
+
+    75% 
+    {
+        transform: scale(0.5);
+    }
+  
+    100% 
+    {
+        transform: scale(1);
+    }
+}

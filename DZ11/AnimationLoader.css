@@ -1,0 +1,29 @@
+body
+{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+div 
+{
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    border-top-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+} 
