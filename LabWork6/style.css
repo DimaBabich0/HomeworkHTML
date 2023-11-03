@@ -1,0 +1,50 @@
+.menu
+{
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+}
+
+.menu ul
+{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+
+.menu li
+{
+    list-style-type: none;
+    flex-grow: 1;
+    font-family: Arial;
+    text-align: center;
+    width: 100%;
+}
+
+.menu li a
+{
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    background-color: gray;
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover
+{
+    background: #575757;
+    color: orange;
+    font-size: 2em;
+}
+
+.menu ul ul
+{
+    display: none;
+}
+
+.menu ul li:hover > ul
+{
+    display: block;
+}
