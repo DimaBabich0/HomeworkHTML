@@ -1,0 +1,43 @@
+ul
+{
+  width: 250px;
+  height: 500px;
+  display: inline-flex;
+}
+ul li
+{
+  list-style-type: none;
+}
+div
+{
+  width: 250px;
+  height: 500px;
+  background-color: rgb(163, 163, 163);
+}
+
+img
+{
+  width: 250px;
+  height: 322px;
+  padding: 0%;
+  margin: 0%;
+}
+
+p
+{
+  padding: 0%;
+  margin: 0%;
+}
+
+.secondImg
+{
+  display: none;
+}
+.IMAGES:hover .mainImg
+{
+  display: none;
+}
+.IMAGES:hover .secondImg
+{
+  display: block;
+}
