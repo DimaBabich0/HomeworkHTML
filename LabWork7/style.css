@@ -1,0 +1,183 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+body
+{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Amazon Ember", sans-serif;
+}
+
+.logo_section
+{
+    text-align: center;
+}
+.logo_section img
+{
+    width: 103px;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.main_section
+{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px 18px 0px 18px;
+    box-sizing: border-box;
+    display: block;
+
+    font-family: "Amazon Ember", sans-serif;
+    color: #111;
+    font-size: 13px;
+    line-height: 19px;
+
+    display: block;
+    width: 350px;
+    text-align: start;
+}
+.main_section h1
+{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    padding-bottom: 4px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+.main_section div
+{
+    margin-bottom: 14px;
+}
+.main_section div .info_password
+{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    font-size: 12px;
+}
+.main_section div .info_password img
+{
+    width: 20px;
+}
+
+.main_section label
+{
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-family: "Amazon Ember", sans-serif;
+}
+.main_section input
+{
+    color: #0f1111;
+    height: 22px;
+    width: 95%;
+    padding: 3px 7px;
+    font-family: "Amazon Ember", sans-serif;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    border-top-color: #949494;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.07) inset;
+    outline: 0;
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+.main_section div .button
+{
+    background-color: #FFD814;
+    border-color: #FCD200;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.main_section div .button span
+{
+    position: relative;
+    overflow: hidden;
+    background-color: #FFD814;
+    color: #111;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Amazon Ember", sans-serif;
+}
+.main_section div .button span input
+{
+    color: #0F1111;
+    font-family: "Amazon Ember", sans-serif;
+    cursor: pointer;
+    position: absolute;
+}
+.main_section div .button span span
+{
+    color: #0F1111;
+    font-family: "Amazon Ember", sans-serif;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.agreement_section
+{
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+hr
+{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #00000000, #ddd, #00000000);
+    margin: 25px 0px;
+}
+
+a
+{
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.list_section
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Amazon Ember", sans-serif;
+    font-size: 12px;
+}
+.list_section p
+{
+    margin: 0%;
+    font-weight: 300;
+    font-family: "Amazon Ember", sans-serif;
+}
+
+.list_section ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0px;
+}
+.list_section ul li
+{
+    margin: 0px 15px;
+    font-size: 10px;
+}
