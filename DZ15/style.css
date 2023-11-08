@@ -1,0 +1,184 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+    font-family: Helvetica, Tahoma, Verdana,   sans-serif;
+    font-size: 1rem;
+}
+h1,h2,h3,li, p,a
+{
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    color: black;
+}
+
+.container
+{
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vh 0 1vh;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.logo form
+{
+    display: none;
+}
+.logo div
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    border: 2px solid black;
+    width: 10vh;
+    padding: 1vh;
+}
+
+.nav
+{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.nav a
+{
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0vh 2vh;
+}
+.nav form
+{
+    padding: 0vh 2vh;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+
+section
+{
+    border: 2px solid black;
+    flex: 1 1 20%;
+    margin-right: 2vh;
+}
+section
+{
+    padding: 1vh 2vh;
+}
+section *
+{
+    display: block;
+    padding-bottom: 1.5vh;
+}
+section img
+{
+    width: 100%;
+}
+
+
+aside
+{
+    flex-basis: 30%;
+}
+aside div
+{
+    border: 2px solid black;
+    margin-bottom: 2vh;
+}
+
+.list_section
+{
+    padding: 1vh;
+}
+.list_section ul
+{
+    list-style-type: none;
+    margin: 1vh 0vh;
+}
+.list_section *
+{
+    margin: 0 1vh;
+}
+.photo_section
+{
+    padding: 1vh;
+}
+.photo_section p
+{
+    padding-bottom: 1vh;
+}
+.photo_section img
+{
+    padding: 1vh;
+}
+
+@media screen and (max-width:768px)
+{
+    .logo form
+    {
+        display: block;
+    }
+    .nav form
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px)
+{
+    .logo form
+    {
+        display: block;
+    }
+    .nav
+    {
+        font-size: 0.7em;
+        justify-content: space-around;
+    }
+    .nav a
+    {
+        padding: 0vh 0.2vh;
+    }
+    .nav form
+    {
+        display: none;
+    }
+    .list_section
+    {
+        display: none;
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    section
+    {
+        margin-right: 0vh;
+        margin-bottom: 2vh;
+    }
+}
