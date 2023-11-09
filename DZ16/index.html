@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_part">
+            <img src="imgs/avatar.png" class="avatar" alt="">
+            <p>Регистрация</p>
+            <img src="imgs/arrow.png" class="arrow" alt="">
+        </div>
+
+        <div class="right_part">
+            <form method="get">
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" placeholder="First and last name" 
+                    pattern="^\D{2,}$"/>
+            </div>
+
+            <div class="gender_section">
+                <p>Пол</p>
+                <label>Мужской 
+                    <input type="radio" name="gender" value="male"/>
+                </label>
+                <label>Женский 
+                    <input type="radio" name="gender" value="female"/>
+                </label>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="example@domain.com" 
+                    pattern="^(\S{5,}@\D{3,5}\.\D{2,5})$"/>
+            </div>
+
+            <div>
+                <label for="country">Страна</label><br>
+                <select name="country">
+                    <option>USA</option>
+                    <option>Poland</option>
+                    <option>Ukraine</option>
+                    <option>Russia</option>
+                    <option>Belarus</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Отправить" />
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

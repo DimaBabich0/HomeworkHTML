@@ -1,0 +1,67 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    background-color: #9CBC2B;
+    border-radius: 1vh;
+}
+
+.container div
+{
+    padding: 1vh;
+    margin: 0.5vh;
+}
+
+.container div div
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.5vh solid white;
+    border-radius: 1vh;
+    padding: 1.5vh;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_type_section
+{
+    flex-direction: column;
+}
+.card_type_section div
+{
+    border: none!important;
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+.card_type_section div label
+{
+    padding: 0vh 1vh;
+}
+
+img
+{
+    width: 32px;
+}
+
+.address_section
+{
+    align-items: center;
+}

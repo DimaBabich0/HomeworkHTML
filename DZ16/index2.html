@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Step 1: Your details</h3>
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="First and last name" 
+                    pattern="^\D{2,}$"/>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" placeholder="example@domain.com" 
+                    pattern="^\S{5,}@\D{3,5}\.\D{2,5}$"/>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" placeholder="Eg. +447500000000" 
+                    pattern="^\+\d{12}$"/>
+            </div>
+        </div>
+
+        <div>
+            <h3>Step 2: Devilery address</h3>
+            
+            <div class="address_section">
+                <label for="address">Address</label>
+                <textarea name="address" minlength="2" maxlength="128"></textarea>
+            </div>
+
+            <div>
+                <label for="Post code">Post code</label>
+                <input type="text"/>
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <input type="text"/>
+            </div>
+        </div>
+
+        <div>
+            <h3>Step 3: Card details</h3>
+            
+            <div class="card_type_section">
+                <label for="card_type">Card type</label>
+                <div>
+                    <label>
+                        <input type="radio" name="card_type" value="visa"/>
+                        <img src="imgs/visa.png" alt="">
+                        VISA 
+                    </label>
+                    <label>
+                        <input type="radio" name="card_type" value="amex"/>
+                        <img src="imgs/amex.png" alt="">
+                        AmEx
+                    </label>
+                    <label>
+                        <input type="radio" name="card_type" value="mastercard"/>
+                        <img src="imgs/mastercard.png" alt="">
+                        MasterCard
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="card_number">Card number</label>
+                <input type="text"/>
+            </div>
+
+            <div>
+                <label for="security_code">Security code</label>
+                <input type="text"/>
+            </div>
+
+            <div>
+                <label for="name_on_card">Name on card</label>
+                <input type="text" placeholder="Exact name as on the card"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

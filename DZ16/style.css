@@ -1,0 +1,81 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.left_part
+{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    border-radius: 2vh 0vh 0vh 2vh;
+}
+.left_part p
+{
+    font-size: 2em;
+    margin: 2vh;
+}
+.left_part .avatar
+{
+    width: 128px;
+}
+.left_part .arrow
+{
+    width: 64px;
+}
+
+.right_part
+{
+    background-color: white;
+    padding: 5vh;
+    border-radius: 0vh 2vh 2vh 0vh;
+}
+.right_part div
+{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.right_part div label
+{
+    padding-right: 1vh;
+    width: 10vh;
+}
+.right_part .gender_section
+{
+    flex-direction: column;
+}
+.right_part [type="submit"]
+{
+    padding: 0vh 1vh;
+}
+.right_part input[type="text"]
+{
+    width: 20vh;
+}
+.right_part select
+{
+    width: 20vh;
+}
