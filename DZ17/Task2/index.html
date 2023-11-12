@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form method="get">
+            <div>
+                <label for="name">Ник</label>
+                <input type="text" pattern="^\D{2,}$"/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="example@domain.com" 
+                    pattern="^(\S{5,}@\D{3,5}\.\D{2,5})$"/>
+            </div>
+
+            <div>
+                <label for="date_of_birthday">День рождения</label>
+                <input type="date"/>
+            </div>
+
+            <div>
+                <p>Пол</p>
+                <label>Мужской 
+                    <input type="radio" name="gender"/>
+                </label>
+                <label>Женский 
+                    <input type="radio" name="gender"/>
+                </label>
+            </div>
+
+            <div>
+                <label for="country">Страна</label>
+                <select name="country">
+                    <option>USA</option>
+                    <option>Poland</option>
+                    <option>Ukraine</option>
+                    <option>Russia</option>
+                    <option>Belarus</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Тип героя</p>
+                <label>Воин 
+                    <input type="radio" name="type_of_hero"/>
+                </label>
+                <label>Лучник 
+                    <input type="radio" name="type_of_hero"/>
+                </label>
+                <label>Маг 
+                    <input type="radio" name="type_of_hero"/>
+                </label>
+            </div>
+
+            <div>
+                <label for="gaming_experience">Игровой опыт (в годах)</label>
+                <input type="number" value="0" min="0" max="60"/>
+            </div>
+
+            <div>
+                <input type="submit" value="Завершить регистрацию"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_part">
+            <h1>Ваш заказ:</h1>
+
+            <div>
+                <img src="imgs/img1.png" alt="">
+                <p>Сет роллов #1</p>
+                <p>999 грн</p>
+            </div>
+
+            <div>
+                <img src="imgs/img2.png" alt="">
+                <p>Сет роллов #2</p>
+                <p>999 грн</p>
+            </div>
+        </div>
+
+        <div class="right_part">
+            <form method="get">
+                <div>
+                    <label for="name">Имя</label>
+                    <input type="text" pattern="^\D{2,}$"/>
+                </div>
+    
+                <div>
+                    <label for="address">Адрес</label>
+                    <input type="text" pattern="^\D{2,}$"/>
+                </div>
+    
+                <div>
+                    <label for="phone">Номер телефона</label>
+                    <input type="text" placeholder="+447500000000" 
+                        pattern="^\+\d{12}$"/>
+                </div>
+    
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" placeholder="example@domain.com" 
+                        pattern="^(\S{5,}@\D{3,5}\.\D{2,5})$"/>
+                </div>
+    
+                <div>
+                    <label for="number_of_sticks">Количество палочек</label>
+                    <input type="number" value="1" min="1" max="10"/>
+                </div>
+    
+                <div>
+                    <p>Вид палочек</p>
+                    <label>Обычные 
+                        <input type="radio" name="type_of_sticks" checked/>
+                    </label>
+                    <label>Обучающие 
+                        <input type="radio" name="type_of_sticks"/>
+                    </label>
+                </div>
+    
+                <div>
+                    <label for="number_of_napkins">Количество салфеток</label>
+                    <input type="number" value="1" min="1" max="20"/>
+                </div>
+    
+                <div>
+                    <label for="commentary">Комментарий к заказу</label>
+                    <textarea name="commentary" minlength="1" maxlength="128"></textarea>
+                </div>
+    
+                <div>
+                    <input type="submit" value="Завершить заказ"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
