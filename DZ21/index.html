@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+</head>
+<body>
+    <header>
+        <nav class="red accent-3">
+            <a class="brand-logo center">Header</a>
+            <ul id="mobile-left" class="sidenav">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+            <a href="#" data-target="mobile-left" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav>
+
+        <nav class="blue hide-on-med-and-down">
+            <ul class="hide-on-med-and-down">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="row" style="margin: 0%;">
+        <div class="col s4 m3 green accent-4" style="height: 50vh;"></div>
+        <div class="col s8 m6 yellow darken-2" style="height: 50vh;"></div>
+        <div class="hide-on-med-and-down col m3 pink darken-3" style="height: 50vh;"></div>
+    </main>
+
+    <footer class="orange lighten-1" style="height: 10vh;"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>
