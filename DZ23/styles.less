@@ -1,0 +1,67 @@
+@mainColor: #3066BA;
+@sidebarDiv: @mainColor+70;
+@mainDiv: @sidebarDiv+70;
+@borderColor: green;
+
+@image: "https://materializecss.com/images/sample-1.jpg";
+
+@border-class: border;
+.@{border-class}
+{
+    border: 1vh solid @borderColor;
+}
+
+@flex-class: flex;
+.@{flex-class}
+{
+    display: flex;
+}
+
+@padding-id: padding;
+#@{padding-id}
+{
+    padding: 1vh;
+}
+
+header
+{
+    width: 100%;
+    height: 10vh;
+    background-color: @mainColor;
+}
+
+nav
+{
+    width: 50vh;
+    height: 50vh;
+    background-color: @sidebarDiv;
+}
+
+main
+{
+    height: 50vh;
+    background-color: @mainDiv;
+
+    display: flex;
+    align-items: center;
+
+    .img
+    {
+        width: 87%;
+        height: 54%;
+        background: url("@{image}");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    p
+    {
+        padding: 3vh;
+    }
+}
+
+footer
+{
+    width: 100%;
+    height: 10vh;
+    background-color: @mainColor;
+}
